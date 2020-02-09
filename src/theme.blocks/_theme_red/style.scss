@@ -1,0 +1,67 @@
+@import '../../scss/_reset.scss';
+
+//Variables
+@import '../../scss/_variables.scss';
+
+// Theme styles
+@import '_theme_red.scss';
+
+//Animation
+@import '../../scss/animations.scss';
+
+//Slick slider
+@import '../../common.blocks/slider/slider.scss';
+
+//Common styles
+@import '../../common.blocks/body/body.scss';
+@import '../../common.blocks/container/container.scss';
+@import '../../common.blocks/section/section.scss';
+@import '../../common.blocks/topGradient/topGradient.scss';
+@import '../../common.blocks/title/title.scss';
+@import '../../common.blocks/figure/figure.scss';
+@import '../../common.blocks/picture/picture.scss';
+@import '../../common.blocks/label/label.scss';
+@import '../../common.blocks/btn/btn.scss';
+@import '../../common.blocks/price/price.scss';
+@import '../../common.blocks/rating/rating.scss';
+@import '../../common.blocks/input/input.scss';
+@import '../../common.blocks/contactForm/contactForm.scss';
+@import '../../common.blocks/fontello/fontello.scss';
+@import '../../common.blocks/navToggle/navToggle.scss';
+@import '../../common.blocks/footnote/footnote.scss';
+@import '../../common.blocks/aside/aside.scss';
+@import '../../common.blocks/checkbox/checkbox.scss';
+@import '../../common.blocks/pagination/pagination.scss';
+@import '../../common.blocks/blogCategory/blogCategory.scss';
+@import '../../common.blocks/blogList/blogList.scss';
+@import '../../common.blocks/blogItem/blogItem.scss';
+
+//block styles
+@import '../../common.blocks/frontPage/frontPage.scss';
+@import '../../common.blocks/singlePage/singlePage.scss';
+@import '../../common.blocks/header/header.scss';
+@import '../../common.blocks/logo/logo.scss';
+@import '../../common.blocks/nav/nav.scss';
+@import '../../common.blocks/cart/cart.scss';
+@import '../../common.blocks/headerTitle/headerTitle.scss';
+@import '../../common.blocks/main/main.scss';
+@import '../../common.blocks/circleAnim/circleAnim.scss';
+@import '../../common.blocks/rotatePath/rotatePath.scss';
+@import '../../common.blocks/article/article.scss';
+@import '../../common.blocks/contacts/contacts.scss';
+@import '../../common.blocks/contactItem/contactItem.scss';
+@import '../../common.blocks/twoColContent/twoColContent.scss';
+@import '../../common.blocks/textWrap/textWrap.scss';
+@import '../../common.blocks/shopItem/shopItem.scss';
+@import '../../common.blocks/teamItem/teamItem.scss';
+@import '../../common.blocks/multiItemSlider/multiItemSlider.scss';
+@import '../../common.blocks/shopList/shopList.scss';
+@import '../../common.blocks/oneColSlider/oneColSlider.scss';
+@import '../../common.blocks/photo/photo.scss';
+@import '../../common.blocks/name/name.scss';
+@import '../../common.blocks/footer/footer.scss';
+@import '../../common.blocks/threeCol/threeCol.scss';
+@import '../../common.blocks/footerMenu/footerMenu.scss';
+@import '../../common.blocks/socialBlock/socialBlock.scss';
+@import '../../common.blocks/copyright/copyright.scss';
+@import '../../common.blocks/priceRange/priceRange.scss';
