@@ -1,0 +1,15 @@
+@keyframes circleRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes elastic {
+  33% {
+    transform: scale(1.05, 0.95);
+  }
+
+  66% {
+    transform: scale(0.95, 1.05);
+  }
+}

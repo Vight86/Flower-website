@@ -1,0 +1,22 @@
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  &__cart {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $background;
+    border-radius: 50%;
+    opacity: 0.75;
+  }
+}

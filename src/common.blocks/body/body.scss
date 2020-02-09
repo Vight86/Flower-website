@@ -1,0 +1,29 @@
+.body {
+  color: #000;
+  font-weight: 400;
+  font-family: $primaryFont;
+
+  &_noScroll {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .body {
+    &_noScroll {
+      overflow: visible;
+    }
+  }
+}

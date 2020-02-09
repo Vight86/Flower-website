@@ -1,0 +1,126 @@
+.twoColContent {
+  display: flex !important;
+  justify-content: space-between;
+
+  &__figure {
+    position: relative;
+    flex: 0 1 40%;
+    height: auto;
+    padding-top: 5px;
+  }
+
+  &__label {
+    padding: 25px 15px 15px;
+    font-size: 1.5rem;
+    border-radius: 5px 0 15px 15px;
+    transform-origin: center 5px;
+
+    &::before {
+      top: 0;
+      left: 100%;
+      width: 4px;
+      height: 5px;
+    }
+
+    &::after {
+      top: 0;
+      left: 100%;
+      width: 8px;
+      height: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    color: $darkGrey;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__rating {
+    margin-bottom: 20px;
+  }
+
+  &__salePrice {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  &__textWrap {
+    padding-top: 21.2em;
+  }
+
+  &__textWrap_inSlider {
+    padding-top: 12em;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  &__btn {
+    align-self: flex-end;
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .twoColContent {
+    flex-direction: column;
+
+    &__col {
+      margin-top: 40px;
+    }
+
+    &__title {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+
+    &__label {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .twoColContent {
+    flex-direction: row;
+
+    &__col {
+      margin-top: 0;
+    }
+
+    &__title {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    &__label {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .twoColContent {
+    &__btn {
+      margin-top: auto;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.shopList {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+
+  &__shopItem {
+    margin-bottom: 60px;
+  }
+
+  &__banner {
+    width: 100%;
+    margin-bottom: 25px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .shopList {
+    &__shopItem {
+      &_page_front {
+        width: 48%;
+      }
+
+      &_page_shop {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .shopList {
+    &__shopItem {
+      &_page_front {
+        width: 31%;
+      }
+
+      &_page_shop {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .shopList {
+    &__shopItem {
+      &_page_front {
+        width: 23%;
+      }
+
+      &_page_shop {
+        width: 30%;
+      }
+    }
+  }
+}

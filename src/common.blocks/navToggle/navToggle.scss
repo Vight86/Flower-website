@@ -1,0 +1,36 @@
+%navToggle__icon {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: $background;
+}
+
+.navToggle {
+  background: none;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &::before {
+    @extend %navToggle__icon;
+
+    margin-bottom: 7px;
+    content: '';
+  }
+
+  &::after {
+    @extend %navToggle__icon;
+
+    content: '';
+  }
+
+  &__icon {
+    @extend %navToggle__icon;
+
+    margin-bottom: 7px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

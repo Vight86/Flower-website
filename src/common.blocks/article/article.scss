@@ -1,0 +1,168 @@
+.article {
+  &__title {
+    margin-top: -15px;
+    margin-bottom: 45px;
+  }
+
+  &__figure {
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-bottom: 20px;
+    padding-top: 40%;
+  }
+
+  &__contacts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__contactForm {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  &__address {
+    margin-top: 2rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol {
+    margin-bottom: 2.5rem;
+    color: #2c2c2c;
+    line-height: 2;
+  }
+
+  ul > li {
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      position: absolute;
+      top: 0.5rem;
+      left: 20px;
+      display: block;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 0 50%;
+      content: '';
+    }
+  }
+
+  ol {
+    counter-reset: num;
+
+    & > li {
+      padding-left: 50px;
+
+      &::before {
+        font-weight: 500;
+        content: counter(num) '. ';
+        counter-increment: num;
+      }
+    }
+  }
+
+  .attention {
+    position: relative;
+    padding-left: 10%;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 3%;
+      display: block;
+      width: 15px;
+      height: 100%;
+      content: '';
+    }
+  }
+
+  blockquote {
+    position: relative;
+    padding-left: 10%;
+
+    &::before {
+      position: absolute;
+      top: -1.5rem;
+      left: 1%;
+      font-size: 1.5rem;
+      content: '\e808';
+    }
+
+    & > span {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: 0) {
+  .article {
+    &__logo {
+      float: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+
+    &__contacts {
+      flex-flow: column nowrap;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .article {
+    &__logo {
+      float: left;
+      width: 335px;
+      height: 335px;
+      margin-right: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .article {
+    &__contacts {
+      flex-flow: row wrap;
+    }
+  }
+}

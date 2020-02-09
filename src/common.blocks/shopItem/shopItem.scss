@@ -1,0 +1,88 @@
+.shopItem {
+  position: relative;
+  padding-bottom: 1rem;
+  background: #fff;
+  border-radius: 0 17px;
+  box-shadow: 0 0 10px rgba($color: $grey, $alpha: 0.65);
+
+  &_hovered {
+    transition: 0.3s;
+
+    .figure__picture {
+      transition: transform 0.3s;
+      will-change: transform;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px $grey;
+
+      .figure__picture {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__figure {
+    margin-top: -4px;
+    margin-bottom: 25px;
+    padding-top: 4px;
+  }
+
+  &__pictureWrap {
+    border-radius: 0 17px 0 0;
+  }
+
+  &__label {
+    padding: 10px 7px 10px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 5px 0 10px 10px;
+
+    &::before {
+      top: 0;
+      left: 99%;
+      width: 3px;
+      height: 4px;
+    }
+
+    &::after {
+      top: 0;
+      left: 100%;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px 4px 0 0;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0.5rem;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+
+  &__rating {
+    margin-bottom: 20px;
+    margin-left: 1rem;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  &__price {
+    font-size: 1rem;
+  }
+
+  &__btn {
+    padding: 7px 19px;
+  }
+}

@@ -1,0 +1,33 @@
+@media screen and (min-width: 0) {
+  .nav {
+    &__link {
+      position: relative;
+      margin-top: 3rem;
+      font-weight: 600;
+      text-decoration: none;
+
+      &::after {
+        bottom: -5px;
+      }
+
+      &_active {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .nav__link {
+    margin-top: 0;
+
+    &_active {
+      &::after {
+        width: 100%;
+        background: $primary;
+      }
+    }
+  }
+}

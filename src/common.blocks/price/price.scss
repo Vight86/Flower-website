@@ -1,0 +1,7 @@
+.price {
+  font-weight: 500;
+
+  &::before {
+    content: '\0024';
+  }
+}

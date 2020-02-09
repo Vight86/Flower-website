@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-around;
+
+  &__contactItem {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .contacts {
+    &__contactItem {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .contacts {
+    &__contactItem {
+      width: 40%;
+    }
+  }
+}

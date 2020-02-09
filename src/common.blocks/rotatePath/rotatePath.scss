@@ -1,0 +1,7 @@
+.rotatePath_anim_rotate {
+  animation: circleRotate 6s cubic-bezier(1, 0.23, 0.91, 1) infinite;
+}
+
+.rotatePath_anim_rotateReverse {
+  animation: circleRotate 6s cubic-bezier(0.13, 0.01, 0, 1.01) reverse infinite;
+}

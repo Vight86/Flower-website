@@ -1,0 +1,16 @@
+@media screen and (min-width: 0) {
+  .blogList {
+    &__blogItem {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .blogList {
+    &__blogItem {
+      flex-direction: row;
+    }
+  }
+}

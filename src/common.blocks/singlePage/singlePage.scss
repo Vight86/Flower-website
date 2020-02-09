@@ -1,0 +1,22 @@
+.singlePage {
+  &__header {
+    height: 140px;
+    background: #fafafa;
+  }
+
+  &__footer {
+    margin-top: -125px;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .singlePage__header {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  .singlePage__header {
+    overflow: visible;
+  }
+}

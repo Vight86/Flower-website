@@ -1,0 +1,21 @@
+.socialBlock {
+  &__item {
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 10px;
+    color: $accent;
+    font-size: 1rem;
+    line-height: 2.1rem;
+    text-align: center;
+    text-decoration: none;
+    background: rgba($color: $background, $alpha: 0.6);
+    border-radius: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: rgba($color: $background, $alpha: 0.75);
+    }
+  }
+}

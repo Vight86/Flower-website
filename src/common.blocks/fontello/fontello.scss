@@ -1,0 +1,33 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'fontello';
+  font-style: normal;
+  src: url('fonts/fontello.eot');
+  src:
+    url('fonts/fontello.eot#iefix') format('embedded-opentype'),
+    url('fonts/fontello.woff') format('woff'),
+    url('fonts/fontello.ttf') format('truetype'),
+    url('fonts/fontello.svg') format('svg');
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before,
+.checkbox_custom::before,
+blockquote::before {
+  font-weight: normal;
+  font-family: "fontello", serif;
+  font-style: normal;
+}
+
+.icon-facebook::before { content: '\e800'; }
+.icon-twitter::before { content: '\e801'; }
+.icon-youtube::before { content: '\e802'; }
+.icon-pinterest::before { content: '\e803'; }
+.icon-instagram::before { content: '\e804'; }
+.icon-ok::before { content: '\e805'; }
+.icon-nextarrow::before { content: '\e806'; }
+.icon-prevarrow::before { content: '\e807'; }
+.icon-quotes::before { content: '\e808'; }
+.icon-cart::before { content: '\e809'; }
+.icon-close::before { content: '\e810'; }
+.icon-useranonymous::before { content: '\e811'; }

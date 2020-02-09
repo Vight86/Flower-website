@@ -1,0 +1,43 @@
+.circleAnim {
+  position: absolute;
+  z-index: 3;
+
+  &_position_topLeft {
+    top: 15%;
+    left: -225px;
+  }
+
+  &_position_bottomRight {
+    top: 70%;
+    right: -225px;
+    transform: scaleX(-1);
+  }
+
+  &__rotatePath {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  &__circle_size_big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &__circle_size_small {
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+}

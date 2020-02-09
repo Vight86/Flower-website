@@ -1,0 +1,22 @@
+.frontPage {
+  &__header {
+    height: 100vh;
+    min-height: 460px;
+  }
+
+  &__footer {
+    margin-top: -125px;
+  }
+}
+
+@media screen and (min-width: 0) {
+  .frontPage__header {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  .frontPage__header {
+    overflow: visible;
+  }
+}
